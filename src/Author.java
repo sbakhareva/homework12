@@ -15,6 +15,10 @@ public class Author {
         return this.surname;
     }
 
+    public String toString() {
+        return this.name + this.surname;
+    }
+
     public static void main(String[] args) {
         Author author = new Author("Chris ", "Frith");
         System.out.println(author.getName() + author.getSurname());
